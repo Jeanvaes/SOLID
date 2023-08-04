@@ -1,5 +1,5 @@
-# SOLID
-Contiene Ejemplo con coche de violación de principios solid
-Juan Diego Gomez Rueda
-Eduen Jose Florez Marino
-Jena David Valencia Esteban
+# SOLID VIOLATION JAVA
+<h1>Contiene ejemplo con coche de violación de principios solid en Java</h1>
+<li>Juan Diego Gomez Rueda</li>
+<li>Eduen Jose Florez Marino</li>
+<li>Jena David Valencia Esteban</li>
