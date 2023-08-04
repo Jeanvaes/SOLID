@@ -16,7 +16,7 @@ public class CarroService {
         BDguardarCoche db = guardar;
         db.guardarCocheDB(carro);
 
-        System.out.println(carro.getMarca());
+        System.out.println("Se guardo el carro de marca: "+carro.getMarca() + " en la BD");
 
 
 
