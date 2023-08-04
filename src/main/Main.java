@@ -7,16 +7,24 @@ import modelo.Renault;
 
 public class Main {
     public static void main(String[] args) {
-        Carro[] arrayCoches = {
+        Carro[] arrayCoches = hacerListaCarros();
+        imprimirPrecioMedioCoche(arrayCoches);
+        guardarCoche(arrayCoches);
+
+    }
+
+    public static void guardarCoche(Carro[] arrayCoches){
+        for (Carro carro : arrayCoches) {
+            CarroService carroService = new CarroService(carro);
+            carroService.guardarCocheDB(carro);
+        }
+    }
+
+    public static Carro[] hacerListaCarros(){
+        return new Carro[]{
                 new Renault(),
                 new Audi()
         };
-        imprimirPrecioMedioCoche(arrayCoches);
-
-        //Guardar carro en la BD.
-        CarroService service = new CarroService();
-        service.guardarCocheDB(new Renault());
-
     }
 
     public static void imprimirPrecioMedioCoche(Carro[] carros) {
