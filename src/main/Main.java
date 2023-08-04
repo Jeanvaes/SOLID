@@ -14,10 +14,9 @@ public class Main {
         };
         imprimirPrecioMedioCoche(arrayCoches);
 
-        //Guardar carro en la BD.
         CarroService service = new CarroService(new DatabaseMysql());
-        service.guardarCocheDB(new Renault());
-
+        service.guardarCocheDB(new Audi());
+        
 
     }
 

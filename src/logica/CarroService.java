@@ -1,7 +1,8 @@
 package logica;
 
-import bd.DatabaseMysql;
+
 import modelo.Carro;
+
 
 public class CarroService {
     private BDguardarCoche guardar;
@@ -10,9 +11,15 @@ public class CarroService {
         this.guardar = guardar;
     }
 
-    public void guardarCocheDB(Carro carro) {
-        BDguardarCoche db = new DatabaseMysql();
+    public void guardarCocheDB(Carro carro)
+    {
+        BDguardarCoche db = guardar;
         db.guardarCocheDB(carro);
+
+        System.out.println(carro.getMarca());
+
+
+
     }
 
 
