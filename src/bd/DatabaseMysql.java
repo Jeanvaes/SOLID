@@ -1,9 +1,14 @@
 package bd;
 
-public class DatabaseMysql {
+import logica.BDguardarCoche;
+import modelo.Carro;
 
-    public void guardar() {
+public class DatabaseMysql implements BDguardarCoche {
+
+    public void guardarCocheDB(Carro carro) {
         System.out.println("Creo conexion a la base de datos");
         System.out.println("Guarde en la base de datos");
     }
+
+
 }

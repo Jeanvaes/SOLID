@@ -1,7 +1,6 @@
 package modelo;
 
-public abstract class Carro implements BDguardarCoche{
+public abstract class Carro  {
     public abstract void Precio();
-
 
 }
